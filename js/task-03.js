@@ -13,9 +13,19 @@ const images = [
   },
 ];
 
-for (const img of images) {
+//for (const img of images) {
 const galleryEl = document.querySelector(`ul`);
+//galleryEl.insertAdjacentHTML("afterbegin", `<li><img scr="${img.url}" alt="${img.alt}"><li>`);
+//}
 
-galleryEl.insertAdjacentHTML("afterbegin", `<li><img scr="${img.url}" alt="${img.alt}"><li>`);
+const itemEl = images.map(images => {
 
-}
+galleryEl.url = images.url;
+galleryEl.alt = images.alt;
+const galleryItemEl = `<li><img scr="${images.url}" alt="${images.alt}"><li>`;
+
+  return galleryItemEl;
+});
+
+galleryEl.insertAdjacentHTML("afterbegin", itemEl);
+

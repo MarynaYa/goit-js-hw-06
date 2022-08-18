@@ -15,7 +15,6 @@ function onInputClick(event) {           // фун-ция добавляем є�
  createBoxes(newDiv);
 };
 
-
 function createBoxes(amount) {   // создаем коллекцию єлементов
  //ref.input = amount;
  const width = 30;  
@@ -26,7 +25,6 @@ function createBoxes(amount) {   // создаем коллекцию єлеме
 
  for (let i = 0; i < amount; i += 1) {
  /*amount[i] = getRandomHexColor();*/
-
 const divEl = document.createElement(`div`);  // создали новій div
 divEl.classList.add(`box`)
 divEl.style.backgroundColor = getRandomHexColor();
