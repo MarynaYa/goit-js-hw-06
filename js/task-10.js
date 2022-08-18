@@ -16,7 +16,7 @@ function onInputClick(event) {           // фун-ция добавляем є�
 };
 
 function createBoxes(amount) {   // создаем коллекцию єлементов
- //ref.input = amount;
+ ref.input.value = amount;
  const width = 30;  
  const height = 30;
  let addValue = 0;
